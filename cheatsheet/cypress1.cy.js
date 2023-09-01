@@ -62,6 +62,7 @@ cy.get("input[name=q]").type("{selectall}{del}");
 cy.get("#my-elem").contains("hello world");
 cy.get('[alt="iphone"]').as("iphone");
 cy.contains("li", "item1");
+cy.contains("span", "Not Unique Text")
 cy.get("li").contains("item1");
 cy.get("@iphone").click();
 cy.visit("https://www.amazon.ae/");
